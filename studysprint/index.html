@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySprint</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>📚 StudySprint</h1>
+    <button id="themeBtn" onclick="toggleTheme()">🌙 Dark Mode</button>
+    <p>Stay Focused. Study Smart.</p>
+
+    <div class="timer-card">
+        <h2 id="timer">25:00</h2>
+
+        <button onclick="startTimer()">▶ Start</button>
+        <button onclick="resetTimer()">⟳ Reset</button>
+    </div>
+    
+
+    <div class="task-box">
+
+        <h3>Today's Tasks</h3>
+
+        <input type="text" id="taskInput" placeholder="Add a study task...">
+
+        <button onclick="addTask()">+ Add Task</button>
+
+        <ul id="taskList"></ul>
+
+        <div class="progress">
+            <div id="bar"></div>
+        </div>
+
+    </div>
+    <div class="music-box">
+    <h3>🎵 Focus Music</h3>
+
+    <button onclick="playMusic('rain')">🌧 Rain</button>
+    <button onclick="playMusic('ocean')">🌊 Ocean</button>
+    <button onclick="playMusic('cafe')">☕ Cafe</button>
+    <button onclick="stopMusic()">⏹ Stop</button>
+
+    <audio id="musicPlayer" controls style="width:100%; margin-top:15px;"></audio>
+    <div class="quote-box">
+
+    <h3>💬 Quote of the Day</h3>
+
+    <p id="quote"></p>
+   
+    <div class="mood-box">
+
+    <h3>😊 Mood Tracker</h3>
+
+    <p>How are you feeling today?</p>
+
+    <div class="mood-buttons">
+        <button onclick="setMood('😊 Happy')">😊</button>
+        <button onclick="setMood('😎 Motivated')">😎</button>
+        <button onclick="setMood('😴 Tired')">😴</button>
+        <button onclick="setMood('😔 Stressed')">😔</button>
+        <button onclick="setMood('😐 Okay')">😐</button>
+    </div>
+
+    <h4 id="selectedMood">No mood selected</h4>
+
+    <p id="moodMessage"></p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

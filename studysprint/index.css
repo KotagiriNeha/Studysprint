@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+}
+
+.container{
+    width:380px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    padding:25px;
+    border-radius:20px;
+    color:white;
+    box-shadow:0 8px 30px rgba(0,0,0,.3);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:5px;
+}
+
+p{
+    text-align:center;
+    margin-bottom:20px;
+    opacity:.8;
+}
+
+.timer-card{
+    text-align:center;
+}
+
+#timer{
+    font-size:55px;
+    margin:15px 0;
+}
+
+button{
+    border:none;
+    padding:10px 18px;
+    margin:5px;
+    border-radius:30px;
+    cursor:pointer;
+    background:white;
+    color:#2575fc;
+    font-weight:bold;
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.task-box{
+    margin-top:25px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    margin:10px 0;
+    outline:none;
+}
+
+ul{
+    list-style:none;
+    margin-top:10px;
+}
+
+li{
+    display:flex;
+    justify-content:space-between;
+    background:white;
+    color:#333;
+    padding:10px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+.progress{
+    width:100%;
+    height:10px;
+    background:white;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+#bar{
+    width:0%;
+    height:100%;
+    background:limegreen;
+    border-radius:20px;
+    transition:.5s;
+}
+.music-box{
+    margin-top:25px;
+    padding:15px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.15);
+    text-align:center;
+}
+
+.music-box h3{
+    margin-bottom:15px;
+}
+
+.music-box button{
+    margin:5px;
+}
+/* Dark Mode */
+
+.dark{
+    background:#121212;
+}
+
+.dark .container{
+    background:#1f1f1f;
+    color:white;
+}
+
+.dark input{
+    background:#333;
+    color:white;
+}
+
+.dark li,
+.dark .schedule-item,
+.dark .music-box,
+.dark .schedule-box,
+.dark .task-box{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark button{
+    background:#444;
+    color:white;
+}
+
+#themeBtn{
+    margin-bottom:20px;
+}
+.quote-box{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:rgba(255,255,255,.15);
+
+    text-align:center;
+
+}
+
+.quote-box p{
+
+    margin-top:10px;
+
+    font-style:italic;
+
+    line-height:1.6;
+
+}
+.reward-box{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,.15);
+    text-align:center;
+}
+
+.reward-box h3{
+    margin-bottom:10px;
+}
+
+.reward-box p{
+    margin-bottom:10px;
+    opacity:0.9;
+}
+
+.reward-box h2{
+    margin:15px 0;
+    color:#FFD700;
+}
+
+.reward-box button{
+    background:#FFD700;
+    color:#333;
+    font-weight:bold;
+}
+
+.reward-box button:hover{
+    transform:scale(1.05);
+}
+/* Mood Tracker */
+
+.mood-box{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(255,255,255,.15);
+    text-align:center;
+}
+
+.mood-buttons{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:15px 0;
+    flex-wrap:wrap;
+}
+
+.mood-buttons button{
+    width:55px;
+    height:55px;
+    font-size:24px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.mood-buttons button:hover{
+    transform:scale(1.15);
+}
+
+#selectedMood{
+    margin-top:10px;
+    color:#FFD700;
+}
+
+#moodMessage{
+    margin-top:10px;
+    font-style:italic;
+}
